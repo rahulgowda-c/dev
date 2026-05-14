@@ -2,18 +2,8 @@ trigger:
 - main
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: ubuntu-latest
 
 steps:
-- task: Maven@4
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'clean install'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.17'
-    mavenVersionOption: 'Default'
-
-- script: echo "Build completed successfully"
-  displayName: 'Run a simple script'
+- script: echo "Hello Azure DevOps"
+  displayName: "Run Sample Script"
