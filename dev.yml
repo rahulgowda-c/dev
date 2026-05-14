@@ -4,8 +4,8 @@ trigger:
 - main
 
 pool:
-  vmImage: ubuntu-latest
+  name: MyPool
 
 steps:
-- script: echo "Hello Azure DevOps"
-  displayName: "Run Sample Script"
+- script: echo "Self-hosted agent is working"
+  displayName: "Test Agent"
